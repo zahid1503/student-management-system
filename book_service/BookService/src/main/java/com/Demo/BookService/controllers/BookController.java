@@ -1,8 +1,8 @@
-package com.GigLabz.BookService.controllers;
+package com.Demo.BookService.controllers;
 
-import com.GigLabz.BookService.request.BookRequest;
-import com.GigLabz.BookService.response.BookResponse;
-import com.GigLabz.BookService.services.IBookService;
+import com.Demo.BookService.request.BookRequest;
+import com.Demo.BookService.response.BookResponse;
+import com.Demo.BookService.services.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

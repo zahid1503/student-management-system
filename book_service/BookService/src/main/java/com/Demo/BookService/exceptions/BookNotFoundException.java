@@ -1,4 +1,4 @@
-package com.GigLabz.BookService.exceptions;
+package com.Demo.BookService.exceptions;
 
 import lombok.Getter;
 import lombok.Setter;

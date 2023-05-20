@@ -1,15 +1,15 @@
-package com.GigLabz.BookService.services.impl;
+package com.Demo.BookService.services.impl;
 
-import com.GigLabz.BookService.client.StudentClient;
-import com.GigLabz.BookService.entities.Book;
-import com.GigLabz.BookService.exceptions.BookNotFoundException;
-import com.GigLabz.BookService.exceptions.ErrorCode;
-import com.GigLabz.BookService.repositories.IBookRepository;
-import com.GigLabz.BookService.request.BookRequest;
-import com.GigLabz.BookService.response.BookResponse;
-import com.GigLabz.BookService.response.StudentResponseDto;
-import com.GigLabz.BookService.services.IBookService;
-import com.GigLabz.BookService.utilities.Constants;
+import com.Demo.BookService.exceptions.BookNotFoundException;
+import com.Demo.BookService.exceptions.ErrorCode;
+import com.Demo.BookService.utilities.Constants;
+import com.Demo.BookService.client.StudentClient;
+import com.Demo.BookService.entities.Book;
+import com.Demo.BookService.repositories.IBookRepository;
+import com.Demo.BookService.request.BookRequest;
+import com.Demo.BookService.response.BookResponse;
+import com.Demo.BookService.response.StudentResponseDto;
+import com.Demo.BookService.services.IBookService;
 import org.modelmapper.ModelMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
