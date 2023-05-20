@@ -1,4 +1,4 @@
-package com.GigLabz.BookService.utilities;
+package com.Demo.BookService.utilities;
 
 public class Constants {
     public static final String BOOK_ADD_FAIL = "adding book failed";

@@ -1,4 +1,4 @@
-package com.GigLabz.BookService;
+package com.Demo.BookService;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

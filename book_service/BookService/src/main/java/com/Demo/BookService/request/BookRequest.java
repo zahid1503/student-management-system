@@ -1,15 +1,10 @@
-package com.GigLabz.BookService.entities;
+package com.Demo.BookService.request;
 
-import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
-@Entity
-@Table(name = "book")
-public class Book {
+public class BookRequest {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String bookName;
@@ -17,5 +12,4 @@ public class Book {
     private String place;
     private Long studentId;
     private String studentName;
-
 }

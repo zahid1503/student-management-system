@@ -1,4 +1,4 @@
-package com.GigLabz.BookService;
+package com.Demo.BookService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.GigLabz.BookService.response;
+package com.Demo.BookService.response;
 
 import lombok.Data;
 

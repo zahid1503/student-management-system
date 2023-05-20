@@ -1,6 +1,6 @@
-package com.GigLabz.BookService.repositories;
+package com.Demo.BookService.repositories;
 
-import com.GigLabz.BookService.entities.Book;
+import com.Demo.BookService.entities.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,6 +1,6 @@
-package com.GigLabz.BookService.client;
+package com.Demo.BookService.client;
 
-import com.GigLabz.BookService.response.StudentResponseDto;
+import com.Demo.BookService.response.StudentResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
