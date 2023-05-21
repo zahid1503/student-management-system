@@ -50,7 +50,6 @@ public class BookService  implements IBookService {
                 throw new BookNotFoundException(ErrorCode.NOT_FOUND, Constants.BOOK_PUBLISH_YEAR_NOT_FOUND);
             }
 
-
             StudentResponseDto student = studentClient.getStudentDetails(firstName).getBody();
             if (Objects.isNull(student)) {
                 throw new BookNotFoundException(ErrorCode.NOT_FOUND, Constants.STUDENT_NOT_FOUND);
@@ -143,7 +142,7 @@ public class BookService  implements IBookService {
 
     @Override
     public List<BookResponse> findBooksByStudentId(Long studentId) {
-
+        log.info("fetching book details starts");
         try{
             if(studentId == null){
                 throw new BookNotFoundException(ErrorCode.NOT_FOUND, Constants.STUDENT_ID_NOT_FOUND);
@@ -160,6 +159,7 @@ public class BookService  implements IBookService {
 
             return bookResponse;
         }catch(Exception e){
+            log.error("book is not found");
             if(Constants.EMPTY_BOOK_LIST.equals(e.getMessage())){
                 throw new BookNotFoundException(ErrorCode.NO_CONTENT,Constants.EMPTY_BOOK_LIST);
             }
@@ -171,9 +171,8 @@ public class BookService  implements IBookService {
     @Override
     public String deleteBookById(Long id) {
         try{
-            if(id == null){
+            if(id == null)
                 throw new BookNotFoundException(ErrorCode.NOT_FOUND, Constants.BOOK_ID_NOT_FOUND);
-            }
 
             Book book= bookRepository.findById(id).orElseThrow(
                     () -> new BookNotFoundException(ErrorCode.NOT_FOUND,Constants.BOOK_NOT_FOUND));
@@ -188,7 +187,6 @@ public class BookService  implements IBookService {
             }
             throw  new BookNotFoundException(ErrorCode.INTERNAL_SERVER_ERROR, Constants.DELETING_BOOK_FAILED);
         }
-
     }
 
 }
